@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Mão do Macaco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Roboto', sans-serif;
+            color: #212529;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .personagens {
+            padding: 60px;
+        }
+
+        .per {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 30px 10px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .card-text {
+                font-size: 0.95rem;
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.5s ease;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init();
+        });
+    </script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <!-- barra -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">A Mão do Macaco</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resumo">Resumo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#autor">Autor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#personagens">Personagens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#enredo">Enredo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analise">Análise</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introdução -->
+    <section class="section bg-light mt-5">
+        <div class="container text-center">
+            <h1 class="mb-4">“Muito cuidado com o que você deseja...”</h1>
+            <p class="lead">Explore os mistérios e lições do conto de W. W. Jacobs, onde desejos têm um preço.</p>
+        </div>
+    </section>
+    <model-viewer src="imagens-modelo3d/mão_de_macaco_seca_1114180515_texture.glb" alt="Modelo 3D" auto-rotate
+        disable-zoom camera-controls="false" interaction-prompt="none" exposure="1" shadow-intensity="1"
+        style="background-color: transparent;">
+    </model-viewer>
+
+
+
+
+    <!-- Resumo -->
+    <section id="resumo" class="section">
+        <div class="container">
+            <h2 class="mb-4 text-center">Resumo do Conto</h2>
+            <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true">O conto narra a
+                história da família
+                White, que recebe de um visitante uma mão mumificada de macaco capaz
+                de conceder três desejos. Apesar dos avisos sobre suas consequências, o Sr. White faz um desejo por
+                dinheiro. A tragédia se instala quando o filho do casal morre em um acidente, e a indenização recebida
+                corresponde exatamente ao valor desejado. Os desejos seguintes apenas intensificam o sofrimento,
+                revelando que interferir no destino pode ser fatal.</p>
+        </div>
+    </section>
+    <!-- Autor -->
+    <section id="autor" class="section bg-light">
+        <div class="container">
+            <h2 class="mb-4 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Sobre o Autor
+            </h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200"
+                    data-aos-once="true">
+                    <p>
+                        <strong>William Wymark Jacobs</strong> (1863–1943) foi um escritor e humorista britânico, mais
+                        conhecido por seu conto de terror <em>A Mão do Macaco</em>, publicado em 1902. Embora tenha
+                        escrito principalmente histórias cômicas sobre marinheiros e a vida portuária, foi com esse
+                        conto sombrio que conquistou fama duradoura.
+                    </p>
+                    <p>
+                        Jacobs nasceu em Londres e cresceu próximo aos cais do rio Tâmisa, o que influenciou
+                        profundamente sua obra. Trabalhou por muitos anos como funcionário do governo antes de se
+                        dedicar integralmente à literatura.
+                    </p>
+                    <p>
+                        Apesar de sua obra ser majoritariamente voltada ao humor, <em>A Mão do Macaco</em> destacou-se
+                        por sua atmosfera sinistra e pela reflexão sobre os perigos de desafiar o destino, tornando-se
+                        um clássico da literatura gótica e sendo adaptado diversas vezes para teatro, cinema e
+                        televisão.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Personagens -->
+    <section id="personagens" class="section bg-light">
+        <div class="container" data-aos-duration="1500" data-aos-delay="200">
+            <h2 class="mb-5 text-center" data-aos="fade-up">Personagens</h2>
+            <div class="row justify-content-center" data-aos="slide-up">
+
+                <!-- Sr. White -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens-modelo3d/IMG-20251104-WA0011.jpg" class="card-img-top per" alt="Sr. White">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sr. White</h5>
+                            <p class="card-text">Pai da família, curioso e cético. É quem faz o primeiro desejo,
+                                desencadeando os eventos trágicos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sra. White -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens-modelo3d/IMG-20251104-WA0012.jpg" class="card-img-top per" alt="Sra. White">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sra. White</h5>
+                            <p class="card-text">Mãe dedicada e emocional. Movida pela dor, insiste em trazer o filho de
+                                volta à vida.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Herbert White -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens-modelo3d/IMG-20251104-WA0013.jpg" class="card-img-top per"
+                            alt="Herbert White">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Herbert White</h5>
+                            <p class="card-text">Filho jovem e espirituoso. Faz piadas sobre a pata do macaco antes de
+                                morrer tragicamente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sargento-major Morris -->
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="imagens-modelo3d/IMG-20251104-WA0014.jpg" class="card-img-top per"
+                            alt="Sargento-major Morris">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sargento-major Morris</h5>
+                            <p class="card-text">Veterano do exército britânico. Traz a pata do macaco e alerta sobre
+                                seus perigos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- enredo -->
+    <section id="enredo" class="section">
+        <div class="container" data-aos="fade-in" data-aos-duration="1500" data-aos-delay="200" data-aos-once="true">
+            <h2 class="mb-4">Enredo</h2>
+            <p>O Sr. e a Sra. White, e seu filho
+                adulto, Herbert, recebem a visita do Sargento-Major Morris, um amigo
+                que serviu no Exército Britânico na Índia. Durante o jantar, ele os apresenta a uma pata de macaco
+                mumificada. Ele explica como um velho faquir lançou um feitiço na pata, para que ela concedesse três
+                desejos, mas apenas com consequências infernais como punição por interferir no destino. Morris, tendo
+                passado por uma experiência horrível ao usar a pata, joga-a no fogo, mas o cético Sr. White a recupera.
+                Antes de ir embora, Morris avisa o Sr. White sobre o que poderia acontecer se ele usasse a pata.
+
+                O Sr. White hesita a princípio, acreditando já ter tudo o que deseja. Seguindo a sugestão de Herbert, o
+                Sr. White pede, de forma leviana, 200 libras, o que lhe permitirá pagar a hipoteca final de sua casa;
+                então, ele abaixa a pata, dizendo que ela se moveu e se contorceu como uma cobra. No dia seguinte,
+                Herbert sai para o trabalho. Naquela noite, um representante do empregador de Herbert chega à casa dos
+                White, informando que Herbert havia morrido em um terrível acidente que mutilou seu corpo. A empresa
+                nega qualquer responsabilidade, mas oferece uma indenização por luto à família no valor de £ 200.
+
+                Uma semana após o funeral, a Sra. White, enlouquecida pela dor, insiste que o marido use a pata para
+                desejar que Herbert volte à vida. Relutantemente, ele o faz, apesar da grande inquietação com a ideia de
+                convocar o corpo mutilado e em decomposição do filho. Mais tarde naquela noite, alguém bate à porta.
+                Enquanto a Sra. White tenta desesperadamente abrir a porta, o Sr. White fica aterrorizado e teme que a
+                coisa lá fora não seja o filho que ele amava. Ele faz seu terceiro e último desejo. As batidas param, e
+                a Sra. White abre a porta, mas não há ninguém lá.</p>
+        </div>
+    </section>
+
+    <!-- Análise -->
+    <section id="analise" class="section bg-light" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"
+        data-aos-once="true">
+        <div class="container">
+            <h2 class="mb-4">Análise e Temas</h2>
+            <ul>
+                <li><strong>Destino vs. Livre Arbítrio:</strong> O conto sugere que tentar mudar o destino pode trazer
+                    consequências desastrosas.</li>
+                <li><strong>Ganância e Impulsividade:</strong> Os desejos são feitos sem considerar as implicações
+                    morais e emocionais.</li>
+                <li><strong>Simbolismo:</strong> A pata representa o desejo humano de controlar o destino, com
+                    consequências sombrias.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">Trabalho: Autoria Web</p>
+            <p class="mb-0">Desenvolvido por Walison</p>
+        </div>
+        <!-- Botão -->
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="btn btn-outline-light mt-3">
+            Voltar ao topo
+        </button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
